@@ -1,0 +1,41 @@
+#pDD {
+    text-align: center;
+   
+}
+#DD {
+    animation: skullAppear 3s forwards;
+}
+
+#pP{
+    display: flex;
+    justify-content: center;
+}
+p {
+    animation: textSlideLeft 1s;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    width: 50%;
+}
+
+@keyframes textSlideLeft {
+    from{
+        transform: translate(-200px);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes skullAppear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
