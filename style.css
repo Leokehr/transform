@@ -1,3 +1,8 @@
+body{
+    background-image: 
+    url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/18017641-678b-47ac-b9f0-cbfbbfcea8d0/d58pwxm-34fe5e28-99b0-4c20-8ad7-fad2a96f43b4.png/v1/fill/w_894,h_894,q_75,strp/stone_wall_texture_by_zagreb_dubrava-d58pwxm.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi8xODAxNzY0MS02NzhiLTQ3YWMtYjlmMC1jYmZiYmZjZWE4ZDAvZDU4cHd4bS0zNGZlNWUyOC05OWIwLTRjMjAtOGFkNy1mYWQyYTk2ZjQzYjQucG5nIiwid2lkdGgiOiI8PTg5NCIsImhlaWdodCI6Ijw9ODk0In1dXX0.SolKvtjIh_pou8IFMJMCvyNGJV7YDQO9LOxgW4fNw-A');
+    background
+}
 #pDD {
     text-align: center;
    
@@ -17,7 +22,7 @@ p {
     color: #fff;
     border-radius: 30px;
     text-align: center;
-    width: 50%;
+    width: 30%;
 }
 
 @keyframes textSlideLeft {
