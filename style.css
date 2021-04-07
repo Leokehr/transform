@@ -1,32 +1,73 @@
-body{
-    background-image: 
-    url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/18017641-678b-47ac-b9f0-cbfbbfcea8d0/d58pwxm-34fe5e28-99b0-4c20-8ad7-fad2a96f43b4.png/v1/fill/w_894,h_894,q_75,strp/stone_wall_texture_by_zagreb_dubrava-d58pwxm.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi8xODAxNzY0MS02NzhiLTQ3YWMtYjlmMC1jYmZiYmZjZWE4ZDAvZDU4cHd4bS0zNGZlNWUyOC05OWIwLTRjMjAtOGFkNy1mYWQyYTk2ZjQzYjQucG5nIiwid2lkdGgiOiI8PTg5NCIsImhlaWdodCI6Ijw9ODk0In1dXX0.SolKvtjIh_pou8IFMJMCvyNGJV7YDQO9LOxgW4fNw-A');
-}
-#pDD {
-    text-align: center;
-   
-}
-#DD {
-    animation: skullAppear 3s forwards;
-}
 
-#pP{
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    background-color:#8E8D8A;
+}
+.wrapper > * {
+    flex: 1 100%;
+}
+  @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+}
+  @media all and (min-width: 800px) {
+    .main    { flex: 10 0px; }
+    .leftBar { order: 1; } 
+    .main    { order: 2; }
+    .footer  { order: 3; }
+}
+.global-nav {
     display: flex;
     justify-content: center;
+    background-color: #EAE7DC;
 }
-p {
-    animation: textSlideLeft 1s;
-    padding: 20px;
-    background-color: black;
-    color: #fff;
-    border-radius: 30px;
-    text-align: center;
-    width: 30%;
+.menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    width: 50%;
+
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.leftBar{
+    background: linear-gradient(#EAE7DC, 95%, #8E8D8A);
+    text-align: left;
+    height: 800px;
+    padding: 5px;
+    border-right: 1px solid #8E8D8A;
+    border-top: 2px solid #8E8D8A;
+    animation: textSlideLeft 2s ease-in-out;
+}
+.main{
+    background: linear-gradient(#EAE7DC, 95%, #8E8D8A);
+    text-align: left;
+    padding: 10px;
+}
+.article1{
+    /* background-color: black;
+    color: #fff; */
+}
+.article2{
+    /* background-color: white; */
+}
+
+.footer{
+    background-color: #8E8D8A;
+    padding: 10px;
 }
 
 @keyframes textSlideLeft {
     from{
-        transform: translate(-200px);
+        transform: translate(-250px);
         opacity: 0;
     }
     to{
@@ -35,7 +76,7 @@ p {
     }
 }
 
-@keyframes skullAppear {
+@keyframes appear {
     from{
         opacity: 0;
     }
